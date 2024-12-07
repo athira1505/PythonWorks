@@ -1,0 +1,5 @@
+
+100,athira,django,400
+101,ammu,django,450
+102,arya,django,460
+103,athul,django,400

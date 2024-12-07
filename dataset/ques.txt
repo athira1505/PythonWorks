@@ -1,0 +1,3 @@
+this is a pytho program to print hello world
+this python test is very simple
+this python program count frequency of each word

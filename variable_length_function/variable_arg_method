@@ -1,0 +1,86 @@
+
+
+# single *   :   *args        :    tuple
+#  **        :   **kwargs     :    dictionary
+
+
+
+def product(*args):      #  *args accept any number of arguments as tuple  (* is imp)  
+    
+    result=1
+    for num in args:
+        result=result*num
+        return result
+    
+print(product(10,20,5,6))
+
+
+
+def add_num(*args):
+    return sum(args)
+
+print(add_num(10,20))
+print(add_num(10,20,30))
+print(add_num(10,20,30,40))
+
+
+
+
+# create a function that accept any num of arguments and return 2nd max num
+def second_max(*args):
+
+    sorted_num=sorted(args,reverse=True)
+    return sorted_num[1]
+
+print(second_max(10,45,2,7,20))
+
+
+
+
+def disply_mobile_data(**kwargs):
+    print(kwargs.get("name"))
+    print(kwargs.get("price"))
+
+disply_mobile_data(name="oneplus",price=35000,display="amoled")
+
+
+
+# calculator
+def calculator(*args,**kwargs):
+    if kwargs.get("operation")=="+":
+        return sum(args)
+    
+    if kwargs.get("operation")=="*":
+        result=1
+        for num in args:
+            result=result*num
+        return result
+    
+print(calculator(10,20,30,operation="*"))
+
+
+
+
+# def student_info(45,43,44,operation="avg")
+# def student_info(45,43,44,operation="total")
+def student_info(*args,**kwargs):
+    if kwargs.get("operation")=="total":
+        return sum(args)
+    
+    if kwargs.get("operation")=="avg":
+        return sum(args)/len(args)
+
+print(student_info(45,43,44,operation="total"))
+
+
+
+
+# def sort_numbers(1,2,6,4,15,11,reverse="True") desc
+# def sort_numbers(1,2,6,4,15,11,reverse="False") desc
+def sort_numbers(*args,**kwargs):
+    if kwargs.get("reverse")=="True":
+        return sorted(args,reverse=True)
+    
+    if kwargs.get("reverse")=="False":
+        return sorted(args)
+print(sort_numbers(1,2,6,4,15,11,reverse="True") )

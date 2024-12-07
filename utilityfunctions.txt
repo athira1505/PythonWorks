@@ -1,0 +1,17 @@
+print("message")   =>   print a message in console
+print("message", end="/n")
+
+type(object)       =>   return datatype of object
+
+input("message")   =>   read value from console, return string value only
+
+round(object,precision)    =>  object    : objt to be rounded off
+                               precision : no of decimal points needed
+
+len()              =>    length 
+
+range(start,stop,end)     
+
+min(num1,num2)     =>    return smallest number
+
+max(num1,num2)

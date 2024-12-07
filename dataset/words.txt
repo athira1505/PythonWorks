@@ -1,0 +1,10 @@
+hello
+hai
+good
+evening
+python
+django
+madam
+racecar
+cec
+aceca
